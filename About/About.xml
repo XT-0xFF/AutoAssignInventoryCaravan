@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Auto-assign Inventories on Caravan arrival</name>
+	<author>Syrus</author>
+	<url></url>
+	<supportedVersions>
+		<li>1.4</li>
+	</supportedVersions>
+	<packageId>Syrus.AutoAssignInventoryCaravan</packageId>
+	<description>Automatically distributes things carried in the inventory of caravan members to pawn's inventories in accordance to their requirements set by the "Assign"-tab assignments (like medicine) and drug-policies when a caravan arrives on a map.
+	
+- For example:
+Alice and Bob are in the same caravan. Both should carry 5 beer due to a drug policy assignment.
+Alice has 1 beer in her inventory and Bob has 12 beer.
+Once Alice and Bob's caravan enters a map, this mod will distribute Bob's beers by moving 4 of them to Alice's inventory.
+Now Alice carries 5 beer and Bob carries 8 beer, both satisfying their drug policy requirement.
+
+Everyone is happy! 
+Until they die from an ambush of manhunting squirrels...</description>
+	<modDependencies/>
+	<loadAfter/>
+</ModMetaData>
