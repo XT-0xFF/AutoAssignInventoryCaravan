@@ -20,8 +20,8 @@ namespace AutoAssignInventoryCaravan
 			harmony.Patch(
 				typeof(CaravanEnterMapUtility).GetMethod(nameof(CaravanEnterMapUtility.Enter), 
 				new Type[] { typeof(Caravan), typeof(Map), typeof(Func<Pawn, IntVec3>), typeof(CaravanDropInventoryMode), typeof(bool) }),
-				prefix: new HarmonyMethod(typeof(HarmonyPatches), nameof(HarmonyPatches.CaravanEnterMapUtility_Enter_Prefix)),
-                postfix: new HarmonyMethod(typeof(HarmonyPatches), nameof(HarmonyPatches.CaravanEnterMapUtility_Enter_Postfix)));
+				prefix: new HarmonyMethod(typeof(HarmonyPatches), nameof(CaravanEnterMapUtility_Enter_Prefix)),
+                postfix: new HarmonyMethod(typeof(HarmonyPatches), nameof(CaravanEnterMapUtility_Enter_Postfix)));
         }
 
 
